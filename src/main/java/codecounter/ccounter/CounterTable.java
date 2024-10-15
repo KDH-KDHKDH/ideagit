@@ -1,3 +1,6 @@
+package codecounter.ccounter;
+
+import codecounter.ccounter.CodeLineCounter;
 import com.opencsv.CSVWriter;
 
 import java.awt.*;

@@ -1,3 +1,5 @@
+package codecounter.ccounter;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -46,7 +48,7 @@ public class CodeLineCounter {
     /**
      * 初始化函数，将常见的源文件后缀名添加到集合中。每次统计之前需要重新初始化。
      */
-    static void init() {
+    public static void init() {
         // 常见的源文件后缀名数组
         String[] extensions = {
                 "c", "h", "cpp", "cc", "cxx", "hpp", "java", "py", "js", "html",
@@ -68,7 +70,7 @@ public class CodeLineCounter {
      * @param file 文件或目录
      * @throws IOException 如果文件读取失败
      */
-    static void countFilesLines(File file) throws IOException {
+    public static void countFilesLines(File file) throws IOException {
         if (file.isDirectory()) { // 如果是目录，递归处理目录中的所有文件
             File[] files = file.listFiles();
             if (files != null) for (File f : files) countFilesLines(f);
