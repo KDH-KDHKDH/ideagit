@@ -8,5 +8,4 @@ module codecounter.fxframe {
     opens codecounter.counterapp to javafx.fxml;
 
     exports codecounter.counterapp;
-    exports codecounter.fxframe;
 }
